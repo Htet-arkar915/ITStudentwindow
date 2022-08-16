@@ -1,0 +1,455 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="keywords" content="it student window, IT Student Window, IT STUDENT WINDOW, Invest in myanmar, finding fund"/>
+		<meta name="viewpoint" content="width=device-width,initial-scale=1">
+		<link rel="Shortcut icon" href="logo.png" type="image/png"/>
+		<link rel="stylesheet" href="CSS/home.css" />
+		<title></title>
+		
+	</head>
+	<body>
+	<div class="wrap">
+	<div class="messagebox"> 
+		<div class="messageimage" onclick="showmsg()" ><img src="Image/message.png" alt=" " width="35px" height="33px" /></div>
+		
+		<div class="message" id="msg">
+			<div class="it">
+				<img src="Image/logo.png" alt="logo" width="25px" height="25px" class="lmsg">
+				<span class="itsw">IT STUDENTS WINDOW</span>
+			</div>
+			<div class="msg">
+				<div class="r"><span class="receiver">Hello! May I help you!</span></div>
+				<div class="s"><span class="sender">Hello!</span></div>
+				</div>
+			
+				
+			<div class="sendmsg">
+				<input type="text"  id="msg" name="message" placeholder="Ask you konw.?" class="hintmsg">
+				<input type="submit" value="Send" class="msgbtn" id="sendmsg" onclick="sendmsg()">
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	
+		<div class="wrapper">
+		<div class="header" id="myheader"> 
+	<!---------------------------------------------------------------logo and title----------------------------------------------------------->
+			<div class="head"> 
+				<div class="logo"> <img src="Image/logo.png" alt="it students window" width="50px" height="50px"/></div>
+				<div class="title"><h1><span class="change">IT STUDENTS</span> WINDOW</h1> </div>
+				<div class="signin"> 
+				
+					<ul>
+						<li onclick="document.getElementById('signupfilter').style.display='block'" ><img src="Image/signin.png" alt="gmg"  width="25px" height="25px" class="signinImg"><span class="signinspan">SignIn</li>
+							<div class="loginfilter" id="signupfilter">
+								<span onclick="document.getElementById('signupfilter').style.display='none'" class="close" title="Close Modal">&#10006;</span>
+					
+								<div class="signuptype" method="post">
+									<input type="submit" value="Creator SignIn" onclick="studentSignUp()" id="studnetSignUp" class="login"/>
+									<input type="submit" value="Investor SignIn" onclick="investorSignUp()" id="investorSignUp" class="login"/>
+									<input type="submit" value="Member SignIn" onclick="memberSignUp()" id="memberSignUp" class="login"/>
+								</div>
+								<div id="sign"></div>
+								<div id="sign"></div>
+								<div id="sign"></div>
+							</div>
+					
+		          
+								<li onclick="document.getElementById('loginfilter').style.display='block'"><img src="Image/signin.png" alt="gmg"  width="25px" height="25px" class="signinImg"><span class="signinspan">Login</span></li>
+							    <div class="loginfilter" id="loginfilter" >
+								<span onclick="document.getElementById('loginfilter').style.display='none'" class="close" title="Close Modal">&#10006;</span>
+						
+								<div class="logintype" method="post">
+									<input type="submit" value="Creator Login" onclick="studentLogin()" id="studnetlogin" class="login"/>
+									<input type="submit" value="Investor Login" onclick="investorLogin()" id="investorLogin" class="login"/>
+									<input type="submit" value="Member Login" onclick="memberLogin()" id="memberLogin" class="login"/>
+								</div>
+								<div id="send"></div>
+								<div id="send"></div>
+								<div id="send"></div>
+							</div>
+						
+							
+			
+						
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+	<!------------------------------------------------------------------navigation bar -------------------------------------------------------->
+			<div class="sub"> 
+				<div class="nav"> 
+					<ul class="navl">
+						<li class="navlink"><a href="home.html" ><img src="Image/home.png" alt="Home" class="showNav" onchange="showNav()"></img></a></li>
+						<li class="navlink"><a href="Html/Posts.jsp"><img src="Image/post.png" alt="Posts"></img></a></li>					
+						<li class="navlink"><a href="Html/HowItWork.html" ><img src="Image/HowItWork.png" alt="How It Work"></img></a></li>
+						<li class="navlink"><a href="Html/Guide.html"><img src="Image/guide.png" alt="Guide" ></img></a></li>
+						<li class="navlink"><a href="Html/member.jsp"><img src="Image/members.png" alt="Members List" ></img></a></li>
+						<li class="navlink"><a href="Html/About.html"><img src="Image/aboutus.png" alt="About Us" ></img> </a></li>
+					</ul>
+				
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	<!--------------------------------------------------------------polygon and login frame----------------------------------------------->
+		<div class="subheader">
+		
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<img src="Image/header1.png" width="100%" height="300px">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="Image/header2.png" width="100%" height="300px">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="Image/header4.png" width="100%" height="300px">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="Image/header1.png" width="100%" height="300px">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="Image/header2.png" width="100%" height="300px">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="Image/header4.png" width="100%" height="300px">
+				</div>
+				
+			</div>
+			
+			
+<div class="h" style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+			
+			<div class="postandarrow">
+				<div class="polygon"> 
+					<div class="polygonimg1" onclick="document.getElementById('pro').style.display='block'"><img src="Image/website.png" alt="Website Technology" width="170px" height="140px"/></div>
+					<div class="polygonimg2" onclick="document.getElementById('pro').style.display='block'"><img src="Image/application.png" alt="Application Technique" width="170px" height="140px"/></div>
+					<div class="polygonimg3" onclick="document.getElementById('pro').style.display='block'"><img src="Image/hardware.png" alt="Hardware Technology" width="170px" height="140px"/></div>
+				</div>
+				<div class="postArrow"><img src="Image/postArrow.png" alt="Arrow" width="100px" height="100px"/></div>
+			</div>
+			<div class="clear"></div>
+			<!--------------------------Project ----------------------------------->
+			
+			
+					
+					
+			<!--------------------------------------------------------------->
+
+		</div>
+
+		<div class="profilter" id="pro">
+				<span onclick="document.getElementById('pro').style.display='block'" class="close" title="Close Modal">&#10006;</span>
+                				
+				<div class='project'>
+				<h3 class='proheader'>Project Post</h3>
+				<form action='projectpost.jsp' method='post'>
+				<table>
+				<tr>
+			
+				<td><label for='projecttitle' class='lable'>Project Title&nbsp;:</label></td>
+				<td><input type='text' class='hintP' name='projectTitle' placeholder='Please enter project title...' required /><br />
+				</td>
+				<td><label for=groupname' class='lable'>Group Name&nbsp;:</label></td>
+				<td><input type='text' class='hintP' name='groupName' placeholder='Please enter grouo name...' required /><br />
+				</td>
+				</tr>
+				
+				<tr>
+				
+				<td><label for='marketsize' class='lable'>Market Size&nbsp;:</label>
+				</td>
+				<td><input type='text' class='hintP' name='marketSize' placeholder='Please enter exactly amount...' required /><br />
+				</td>
+				
+				<td><label for='targetcustomer' class='lable'>Target Customer&nbsp;:</label></td>
+				<td><input type='text' class='hintP' name='targetCustomer' placeholder='Please enter exactly amount...' required /><br />
+				</td>
+				
+				</tr>
+				<tr>
+				<td><label for='mission&vission' class='lable'>Mission & Vission&nbsp;:</label>
+				</td>
+				<td>
+				<textarea rows="1" cols="1" class='hintPt' name='missionVision' placeholder='Please enter your mission & vission...' required ></textarea>
+				<br />
+				</td>
+				<td><label for='requiredamount' class='lable'>Required Capital Amount&nbsp;:</label></td>
+				<td><input type='text' class='hintP' name='requiredAmount' placeholder='Please enter required amount...' required /><br />
+				</td>
+				
+				</tr>
+				
+				<tr>
+				<td><label for='objective' class='lable'>Objective&nbsp;:</label></td>
+				<td>
+				<textarea rows="1" cols="1" class='hintPt' name='objective' placeholder='Please enter objective...' required></textarea>
+                <br />
+				</td>
+				<td><label for='useful' class='lable'>Social Impact&nbsp;:</label>
+				</td>
+				<td>
+				<input type='text' class='hintP' name='socialImpact' placeholder='How much useful for people???' required /><br />
+				</td>
+				
+				</tr>
+				<tr>
+	
+				<td><label for='innovative' class='lable'>Innovation&nbsp;:</label></td>
+				<td>
+				<textarea rows="1" cols="1" class='hintPt' name='innovation' placeholder='Please enter innovative...' required ></textarea>
+				<br />
+				</td>
+				<td><label for='competitor' class='lable'>Competitors&nbsp;:</label></td>
+				<td><input type='text' class='hintP' name='competitors' placeholder='Please enter ...' required compettitors /><br />
+				</td>
+				
+				</tr>
+				<tr>
+				
+				<td><label for='advantage' class='lable'>Competitive Advantage&nbsp;:</label></td>
+				<td>
+				<textarea rows="1" cols="1" class='hintPt' name='competitiveAdvantage' placeholder='Please enter competition advantage...' required ></textarea>
+  					<br />
+				</td>
+				<td><label for='keyfeed' class='lable'>Key Feed&nbsp;:</label></td>
+				<td> 
+				<textarea rows="1" cols="1" class='hintPty' name='keyFeed' placeholder='Your Key Feed' required></textarea>
+				<input type="button" class='hintChoose' name='key' value='Choose' onclick="document.getElementById('key').style.display='block'"/>
+				<br />
+				</td>
+				
+				</tr>
+				<tr>
+				<td><label for='keyfeed' class='lable'>Project Type&nbsp;:</label></td>
+				<td><select class='hintPtype' name="projecttype">
+				<option value="Website">Web Development</option>
+				<option value="Application">Application</option>
+				<option value="Hardware">Hardware</option>
+				<option value="Platform">Platform</option>
+				<option value="Game">Game</option>
+				<option value="Other">Other</option></select></td>
+				
+				<td><label for='location' class='lable'>Location&nbsp;:</label></td>
+				<td><select class='hintPtype' name="location">
+				<option value="Yangon">Yangon</option>
+				<option value="Mandalay">Mandalay</option>
+				<option value="Meiktila">Meiktila</option>
+				<option value="Myitkyina">Myitkyina</option>
+				<option value="Taunggyi">Taunggyi</option>
+				<option value="Other">Other</option></select></td>
+				</tr>
+				
+				</table>
+			    <input type='submit' name='btnPCancel' class='btnSLW' value='Cancel' onclick='showPro()'/>
+				<input type='submit' name='btnPPost' class='btnSLl' value='Post' onclick='hidePro()'/>	
+				</form>
+				</div>
+			</div>						
+				<div class="keyfeedfilter"	id="key">
+	<div class="projectkey">
+	
+	   <h2>Your project choose with keyfeed</h2>
+	        <form action="home.html" method="post" class="" id="">
+          <table border="0px">
+          <tr>
+			<td><input type="checkbox" value="food" name="key"/>&nbsp;Food</td>
+			<td><input type="checkbox" value="health" name="key"/>&nbsp;Health</td></tr>
+			<tr><td><input type="checkbox" value="sport" name="key"/>&nbsp;Sport</td>
+			<td><input type="checkbox" value="Eduacation" name="key"/>&nbsp;Game</td></tr>
+		   <tr><td> <input type="checkbox" value="system" name="key"/>&nbsp;Embedded System</td>
+		    <td ><input type="checkbox" value="entertainment" name="key"/>Entertainment&nbsp;</td></tr>
+			<tr><td><input type="checkbox" value="agricultuer" name="key"/>&nbsp;Agricultuer</td>
+			<td><input type="checkbox" value="media" name="key"/>&nbsp;Media</td></tr>
+			<tr><td><input type="checkbox" value="Travel" name="key"/>&nbsp;Travel</td>
+			<td ><input type="checkbox" value="agency" name="key"/>&nbsp;Agency</td></tr>
+			<tr><td><input type="checkbox" value="shopping" name="key"/>&nbsp;Shopping</td>
+			<td><input type="checkbox" value="Management" name="key"/>&nbsp;Management</td></tr>
+			<tr><td><input type="checkbox" value="Manafacturing" name="city"/>&nbsp;Manafacturing</td>
+			<td ><input type="checkbox" value="car" name="key"/>Car control&nbsp;</td></tr>
+			<tr><td><input type="checkbox" value="electric light" name="key"/>&nbsp;Electric Light</td>
+			<td><input type="checkbox" value="wli" name="key"/>&nbsp;Water level Indicator</td></tr>
+			<tr> <td><input type="checkbox" value="Networking" name="key"/>&nbsp;Networking</td>
+			<td><input type="checkbox" value="other" name="key"/>&nbsp;Other</td>
+			
+			</tr></table>
+           <input type="submit" value="OK" name="BTN" class="keybtn" onclick="keyfeed()"/>
+			</form>
+				       
+	</div>
+  </div>	
+			
+		
+	<!--------------------------------------------------------sample project and about our website------------------------------------->
+		<div class="body"> 
+			<img src="Image/bg.png" alt="Body Background" width="100%" height="370px" class="bodyimg"/>
+			<div class="all">
+				
+				
+				<div class="left">
+					
+					<div class="samplepost">		
+						
+						<div class="logopost"> <img src="Image/logo.png" alt="Circle Image" width="50px" height="50px"/></div>
+						<div class="titlepost">IT STUDNETS WINDOW</div><br><br><br>
+							<div clss="simplepost">
+							<span class="factmain">Group Name : </span><span class="factdetail">IT STUDENTS WINDOW</span><br/>
+							<span class="factmain">Social Impact : </span><span class="factdetail"> Can cantact with investor and student </span><br/>
+							<span class="factmain">Competitors : </span><span class="factdetail">No competition</span><br/>
+							<span class="factmain">Competiton Advantage : </span><span class="factdetail">3 stage</span><br/>
+							<span class="factmain">Required Capital  Amount : </span><span class="factdetail">200,000</span>	
+						</div>
+								
+					
+					<div class="viewpost"><a href="Html/Posts.jsp"> View Post</a></div>
+					</div>
+				</div>
+				
+					
+				<div class="right"> 
+					<h1>Who we are?</h1>
+					<div><p  class="objective">The main purpose of our website, <i>IT STUDNETS WINDOW</i>, is to join the students who have the idea with
+					the investors. Nowaday, student make the projects but which cannot be useful actually because they do not have investors
+					to create this projects actually. We think our website is the best answer to solve this problem . And then, out website will 
+					useful not only students but also investors. Thank you for visiting our website.</p></div>
+				</div>
+			<div class="clear"></div>
+	<!----------------------------------------->	
+			</div>
+				
+					<div class="clear"></div>
+		
+			<div class="clear"></div>
+		</div>
+	<!----------------------------------------------------------------footer------------------------------------------------------------------>
+		<div class="footer"> 
+			<hr>
+				<center><p class="copyright"><small>copyright &copy; 2018; All right reserved.</small></p></center>
+				<div class="foot">
+					<ul>
+						<li><a href="help.html">Help</a></li>
+						<li><a href="termOfUse.html">Term of Use</a></li>
+						<li><a href="privacyPolicy.html">Privacy Policy</a></li>
+						<li onclick="" ><a href="feedback.html">Feedback</a></li>
+					</ul>
+					<div id="feed"></div>
+				</div>
+				
+				<div class="contactFrame"> 
+					<p class="contactFrame">Contact us:&nbsp;&nbsp;www.itstudentwindow.com<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9742;&nbsp;&nbsp;
+					<a href="tel:09265427138"> 09265427138</a></p>
+					<div class="contactImage"> 
+						<a href="https://www.facebook.com/profile.php?id=100012164478367"> 
+						<img src="Image/facebook.jpg" alt="Facebook" width="20px" height="20px" /></a>
+						<img src="Image/twitter.jpg" alt="Twitter" width="20px" height="20px"/>
+						<img src="Image/linkedin.jpg" alt="LinkedIn" width="20px" height="20px"/>
+						<img src="Image/gmail.png" alt="Gmail" width="20px" height="20px" />
+						
+					</div>
+					<div class="clear"></div>
+				</div>
+		</div>
+	</div>
+	
+	<!---------------------------------------------------------------------------------------popular app-------------------------------------------------------->
+	
+	<div class="popularcover">
+	<div class="popularapp"> 
+	
+
+			<div class="slideshow-container1">
+				
+					<div class="popularfive" id="five"> 
+						Top 10 Popular App
+					</div>	
+			
+			</div>
+			
+	
+			<div class="popularfull">
+
+				<div class="mySlides2 fadeMsg">
+					<img src="Image/logo.png" alt="Popular" width="150px" height="150px" class="pop"/> 
+					<p class="slidetxt">IT STUDETNS WINDOW</p>
+				</div>
+				
+				<div class="mySlides2 fadeMsg">
+					<img src="Image/wow.png" alt="Popular" width="150px" height="150px" class="pop"/> 
+					<p class="slidetxt">WOW TRAVEL</p>
+				</div>
+				
+				<div class="mySlides2 fadeMsg">
+					<img src="Image/private.png" alt="Popular" width="150px" height="150px" class="pop"/> 
+					<p class="slidetxt">PRIVATE SCHOOL</p>
+				</div>
+				
+				<div class="mySlides2 fadeMsg">
+					<img src="Image/babycare.png" alt="Popular" width="150px" height="150px" class="pop"/> 
+					<p class="slidetxt">BABY CARE</p>
+				</div>
+				
+				<div class="mySlides2 fadeMsg">
+					<img src="Image/logo.png" alt="Popular" width="150px" height="150px" class="pop"/> 
+					<p class="slidetxt">IT STUDENT WINDOW</p>
+				</div>
+				
+				<div class="mySlides2 fadeMsg">
+					<img src="Image/logo.png" alt="Popular" width="150px" height="150px" class="pop"/> 
+					<p>Slide 6</p>
+				</div>
+				
+				<div class="mySlides2 fadeMsg">
+					<img src="Image/logo.png" alt="Popular" width="150px" height="150px" class="pop"/> 
+					<p>Slide 7</p>
+				</div>
+									
+			</div>
+			
+			
+
+</div>
+	
+		
+				
+			<div class="Ads">
+				<img src="Image/logo.png" width="50px" height="50px" class="i">
+				<img src=Image/logo.png width="50px" height="50px" class="i">
+				<img src="Image/logo.png" width="50px" height="50px" class="i">
+				<p>IT STUDENTS WINDOW Ads</p>
+			</div>
+			
+			<div class="ads">
+				<img src="Image/logo.png" width="50px" height="50px" class="i">
+				<img src=Image/logo.png width="50px" height="50px" class="i">
+				<img src="Image/logo.png" width="50px" height="50px" class="i">
+				<p>IT STUDENTS WINDOW Ads</p>
+			</div>
+			
+			
+</div>
+	<script type="text/javascript" src="JS/background.js"></script>
+	<script type="text/javascript" src="JS/home.js"></script>
+	<script type="text/javascript" src="JS/slidepop.js"></script>
+	<script type="text/javascript" src="JS/slide.js"></script>
+		</body>
+	</html>

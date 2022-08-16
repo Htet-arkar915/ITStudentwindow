@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="it student window, IT Student Window, IT STUDENT WINDOW, Invest in myanmar, finding fund"/>
+	<link rel="Shortcut icon" href="logo.png" type="image/png"/>
+	<link rel="stylesheet" href="CSS/home.css" />
+	<title></title>
+	
+</head>
+<body>
+<div class="wrap">
+	<div class="messagebox"> 
+		<div class="messageimage"><img src="Image/logo.png" alt="Message Box" width="40px" height="40px" /></div>
+		<div class="message"></div>
+	</div>
+	<div class="wrapper">
+	<div class="header" id="myheader"> 
+<!---------------------------------------------------------------logo and title----------------------------------------------------------->
+		<div class="head"> 
+			<div class="logo"> <img src="Image/logo.png" alt="it students window" width="50px" height="50px"/></div>
+			<div class="title"><h1><span class="change">IT STUDENTS</span> WINDOW</h1> </div>
+							<div class="signin"> 
+			
+				<ul>
+						<li onclick="document.getElementById('signupfilter').style.display='block'" ><img src="Image/signin.png" alt="gmg"  width="25px" height="25px" class="signinImg"><span class="signinspan">SignIn</li>
+							<div class="loginfilter" id="signupfilter">
+								<span onclick="document.getElementById('signupfilter').style.display='none'" class="close" title="Close Modal">&#10006;</span>
+					
+								<div class="signuptype" method="post">
+									<input type="submit" value="Creator SignIn" onclick="studentSignUp()" id="studnetSignUp" class="login"/>
+									<input type="submit" value="Investor SignIn" onclick="investorSignUp()" id="investorSignUp" class="login"/>
+									<input type="submit" value="Member SignIn" onclick="memberSignUp()" id="memberSignUp" class="login"/>
+								</div>
+								<div id="sign"></div>
+								<div id="sign"></div>
+								<div id="sign"></div>
+							</div>
+					
+		          
+								<li onclick="document.getElementById('loginfilter').style.display='block'"><img src="Image/signin.png" alt="gmg"  width="25px" height="25px" class="signinImg"><span class="signinspan">Login</span></li>
+							    <div class="loginfilter" id="loginfilter" >
+								<span onclick="document.getElementById('loginfilter').style.display='none'" class="close" title="Close Modal">&#10006;</span>
+						
+								<div class="logintype" method="post">
+									<input type="submit" value="Creator Login" onclick="studentLogin()" id="studnetlogin" class="login"/>
+									<input type="submit" value="Investor Login" onclick="investorLogin()" id="investorLogin" class="login"/>
+									<input type="submit" value="Member Login" onclick="memberLogin()" id="memberLogin" class="login"/>
+								</div>
+								<div id="send"></div>
+								<div id="send"></div>
+								<div id="send"></div>
+							</div>
+						
+							
+			
+						
+						</ul>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+
+<!------------------------------------------------------------------navigation bar -------------------------------------------------------->
+		<div class="sub"> 
+			<div class="nav"> 
+				<ul>
+					<li><a href="home.html"><img src="Image/home.png" alt="Home" ></img></a></li>
+					<li><a href="Html/Posts.jsp"><img src="Image/post.png" alt="Posts"></img></a></li>					
+					<li><a href="Html/HowItWork.html" ><img src="Image/HowItWork.png" alt="How It Work" ></img></a></li>
+					<li><a href="Html/Guide.html"><img src="Image/guide.png" alt="Guide"  ></img></a></li>
+					<li><a href="Html/member.jsp"><img src="Image/members.png" alt="Members List"  ></img></a></li>
+					<li><a href="Html/About.html"><img src="Image/aboutus.png" alt="About Us"  ></img> </a></li>
+				</ul>
+			
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+	
+	
+<!--------------------------------------------------------------Body------------------------------------------------------------>
+	<div class="body">
+	<div class="filt">Filter By:</div>
+	<div class="filterby">
+		<ul>
+			<li onclick="AllfilterP()" class="Projectdown" ><span id="changeallP" onclick="tempshowP()">Project Type &and; </span></li>
+			
+			<li onclick="AllfilterC()" class="Projectdown" ><span id="changeallC" onclick="tempshowC()">City &and;</span></li>
+			
+			<li onclick="AllfilterA()" class="Projectdown" ><span id="changeallA" onclick="tempshowA()">Invest Amount &and;</span></li>   
+			
+			<li onclick="Allfilter()" class="down"><span id="changeall" onclick="tempshow()"> Filter &and; </span></li>
+			
+		</ul>    
+		<div class="clear"></div>		
+	</div>
+	
+	
+	<form action="filter.jsp" method="post" class="filterform" id="AllfilterP">
+		<section>
+			<article ><input type="checkbox" value="web" name="type"/>&nbsp;Web Technology</article>
+			<article><input type="checkbox" value="application" name="type"/>&nbsp;Application</article>
+			<article><input type="checkbox" value="hardware" name="type"/>&nbsp;Hardware</article>
+			<article><input type="checkbox" value="hardware" name="type"/>&nbsp;Game</article>
+			<article><input type="checkbox" value="typeother" name="type"/>&nbsp;Other</article>
+		</section>
+		<input type="submit" value="Filter" name="btnproject" class="filterbtn"/>
+	
+	</form>
+	<form action="filter.jsp" method="post" class="filterform" id="AllfilterC">	
+		<section class="filterScroll">
+			<article ><input type="checkbox" value="yangon" name="city"/>&nbsp;Yangon</article>
+			<article><input type="checkbox" value="mandalay" name="city"/>&nbsp;Mandalay</article>
+			<article><input type="checkbox" value="meiktila" name="city"/>&nbsp;Meiktila</article>
+			<article><input type="checkbox" value="naypyitaw" name="city"/>&nbsp;Myitgyina</article>
+			<article><input type="checkbox" value="cityother" name="city"/>&nbsp;Other</article>
+		</section>
+		<input type="submit" value="Filter" name="btncity" class="filterbtn"/>
+	</form>
+    <form action="filter.jsp" method="post" class="filterform" id="AllfilterA">	
+		<section class="filterScroll">
+			<article ><input type="checkbox" value="one" name="amount"/>&nbsp;5,000,000</article>
+			<article><input type="checkbox" value="two" name="amount"/>&nbsp;10,000,000</article>
+			<article><input type="checkbox" value="three" name="amount"/>&nbsp;15,000,000</article>
+			<article><input type="checkbox" value="four" name="amount"/>&nbsp;30,000,000</article>
+			<article><input type="checkbox" value="amountother" name="amount"/>&nbsp;above</article>
+		</section>
+		<input type="submit" value="Filter" name="btnamount" class="filterbtn"/>
+	</form>
+		
+	<form action="filter.jsp" method="post" class="filterform" id="Allfilter">
+		<section>
+			<article ><input type="checkbox" value="web" name="type"/>&nbsp;Web Technology</article>
+			<article><input type="checkbox" value="application" name="type"/>&nbsp;Application</article>
+			<article><input type="checkbox" value="hardware" name="type"/>&nbsp;Hardware</article>
+			<article><input type="checkbox" value="hardware" name="type"/>&nbsp;Game</article>
+			<article><input type="checkbox" value="typeother" name="type"/>&nbsp;Other</article>
+		</section>
+		<section class="filterScroll">
+			<article ><input type="checkbox" value="yangon" name="city"/>&nbsp;Yangon</article>
+			<article><input type="checkbox" value="mandalay" name="city"/>&nbsp;Mandalay</article>
+			<article><input type="checkbox" value="meiktila" name="city"/>&nbsp;Meiktila</article>
+			<article><input type="checkbox" value="naypyitaw" name="city"/>&nbsp;Myitgyina</article>
+			<article><input type="checkbox" value="cityother" name="city"/>&nbsp;Other</article>
+		</section>
+		<section class="filterScroll">
+			<article ><input type="checkbox" value="one" name="city"/>&nbsp;5,000,000</article>
+			<article><input type="checkbox" value="two" name="city"/>&nbsp;10,000,000</article>
+			<article><input type="checkbox" value="three" name="city"/>&nbsp;15,000,000</article>
+			<article><input type="checkbox" value="four" name="city"/>&nbsp;30,000,000</article>
+			<article><input type="checkbox" value="amountother" name="city"/>&nbsp;above</article>
+		</section>
+		<input type="submit" value="Filter" name="btnfilter" class="filterbtn"/>
+	</form>
+	
+	
+	<div class="postNav"> 
+		<form action="filterDetail.jsp" method="post" class="details"> 
+			<input type="submit" name="btnAll" value="All" class="btndetail"/>
+			<input type="submit" name="btnFood" value="Food" class="btndetail"/>
+			<input type="submit" name="btnEducation" value="Education" class="btndetail"/>
+			<input type="submit" name="btnHealth" value="Health" class="btndetail"/>
+			<input type="submit" name="btnAgriculture" value="Agriculture" class="btndetail"/>
+			<input type="submit" name="btnTravel" value="Travel" class="btndetail"/>
+			<input type="submit" name="btnShopping" value="Shopping" class="btndetail"/>
+			<input type="submit" name="btnEntertainment" value="Entertainment" class="btndetail"/>
+			<input type="submit" name="btnMedia" value="Media" class="btndetail"/>
+			<input type="submit" name="btnMachinery" value="Machinery" class="btndetail"/>
+			<input type="submit" name="btnContoller" value="Controller Device" class="btndetail"/>
+			<input type="submit" name="btnNetworking" value="Networking" class="btndetail"/>
+			<input type="submit" name="btnOther" value="Other" class="btndetail"/>
+		</form>
+	</div>	
+	<div class="clear"></div>
+
+	<script type="text/javascript" src="JS/background.js"></script>
+	<script type="text/javascript" src="JS/home.js"></script>
+
+</body>
+</html>
